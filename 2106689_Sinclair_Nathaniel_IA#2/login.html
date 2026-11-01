@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+  Module: CIT2011 - Web Programming
+  Name: Nathaniel Sinclair
+  ID: 2106689 -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for Coding Conf 2026 on October 26, 2026 in Papine, Kgn and receive your customized digital conference ticket.">
+  <title>Register | Coding Conf 2026 — Papine, Kgn</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  
+  <div class="bg-decor" aria-hidden="true">
+    <img src="/assets/images/pattern-lines.svg" alt="" class="decor-lines">
+    <img src="/assets/images/pattern-squiggly-line-top.svg" alt="" class="decor-squiggly-top">
+    <img src="assets/images/pattern-circle.svg" alt="" class="decor-circle">
+    <div class="decor-squiggly-bottom"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Coding Conf 2026 Home">
+        <img src="assets/images/logo-full.svg" alt="Coding Conf" width="209" height="30">
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="index.html#speaker">Speakers</a></li>
+          <li><a href="login.html" class="nav-cta" aria-current="page">Register Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-main">
+   
+    <section class="form-intro-section container" aria-labelledby="register-heading">
+      <h1 id="register-heading" class="page-title">
+        Your Journey to <span class="text-gradient">Coding Conf 2026</span> Starts Here!
+      </h1>
+      <p class="page-subtitle">
+        Secure your spot for <strong>October 26, 2026</strong> in <strong>Papine, Kgn</strong>. Complete all fields below to generate your conference ticket.
+      </p>
+    </section>
+
+    
+    <section class="form-section container" aria-label="Attendee registration form">
+      <form id="registration-form" class="registration-card" action="ticket.html" method="get" novalidate>
+        
+        <div class="form-group" id="avatar-group">
+          <label for="avatar-input" class="form-label">Upload Avatar</label>
+
+          <div class="upload-dropzone" id="avatar-dropzone">
+            <input
+              type="file"
+              id="avatar-input"
+              name="avatar"
+              accept="image/png, image/jpeg"
+              class="file-input-overlay"
+              aria-describedby="avatar-hint avatar-error"
+            >
+
+            
+            <div class="upload-empty" id="upload-empty-state">
+              <span class="upload-icon-box" aria-hidden="true">
+                <img src="assets/images/icon-upload.svg" alt="" width="30" height="30">
+              </span>
+              <p class="upload-prompt">Drag and drop or click to upload</p>
+            </div>
+
+            
+            <div class="upload-preview" id="upload-preview-state" hidden>
+              <img
+                id="avatar-preview-img"
+                src="assets/images/image-avatar.jpg"
+                alt="Selected profile avatar preview"
+                class="preview-thumb"
+                width="60"
+                height="60"
+              >
+              <p id="avatar-file-info" class="preview-file-info"></p>
+              <div class="preview-actions">
+                <button type="button" id="remove-avatar-btn" class="mini-btn">Remove image</button>
+                <button type="button" id="change-avatar-btn" class="mini-btn">Change image</button>
+              </div>
+            </div>
+          </div>
+
+          <p id="avatar-hint" class="field-hint">
+            <img src="assets/images/icon-info.svg" alt="" width="16" height="16">
+            <span>Upload your photo (JPG or PNG, max size: 500KB).</span>
+          </p>
+          <p id="avatar-error" class="field-error" role="alert" aria-live="polite"></p>
+        </div>
+
+        
+        <div class="form-group">
+          <label for="full-name" class="form-label">Full Name</label>
+          <input
+            type="text"
+            id="full-name"
+            name="fullName"
+            placeholder="e.g. Gumball Waterson"
+            autocomplete="name"
+            aria-describedby="name-error"
+          >
+          <p id="name-error" class="field-error" role="alert" aria-live="polite"></p>
+        </div>
+
+        
+        <div class="form-group">
+          <label for="email-address" class="form-label">Email Address</label>
+          <input
+            type="email"
+            id="email-address"
+            name="email"
+            placeholder="example@email.com"
+            autocomplete="email"
+            aria-describedby="email-error"
+          >
+          <p id="email-error" class="field-error" role="alert" aria-live="polite"></p>
+        </div>
+
+        
+        <div class="form-group">
+          <label for="github-handle" class="form-label">GitHub Username</label>
+          <input
+            type="text"
+            id="github-handle"
+            name="github"
+            placeholder="@yourusername"
+            autocomplete="username"
+            aria-describedby="github-hint github-error"
+          >
+          <p id="github-hint" class="field-hint">
+            <img src="assets/images/icon-info.svg" alt="" width="16" height="16">
+          </p>
+          <p id="github-error" class="field-error" role="alert" aria-live="polite"></p>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn-primary btn-block">
+          Generate My Ticket
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo-mark.svg" alt="Coding Conf mark" width="28" height="28">
+        <span><strong>Coding Conf 2026</strong> &bull; October 26, 2026 &bull; Papine, Kgn</span>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#schedule">Schedule</a></li>
+        <li><a href="login.html">Register</a></li>
+      </ul>
+
+      
+    </div>
+  </footer>
+
+  <script src="validation.js"></script>
+</body>
+</html>

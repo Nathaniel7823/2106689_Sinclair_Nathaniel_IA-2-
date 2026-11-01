@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+ Module: CIT2011 - Web Programming
+   Name: Nathaniel Sinclair
+   ID: 2106689 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your Coding Conf 2026 digital conference ticket confirmation.">
+  <title>Your Ticket | Coding Conf 2026 — Papine, Kgn</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  
+  <div class="bg-decor" aria-hidden="true">
+    <img src="assets/images/pattern-lines.svg" alt="" class="decor-lines">
+    <img src="assets/images/pattern-squiggly-line-top.svg" alt="" class="decor-squiggly-top">
+    <img src="assets/images/pattern-circle.svg" alt="" class="decor-circle">
+    <div class="decor-squiggly-bottom"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Coding Conf 2026 Home">
+        <img src="assets/images/logo-full.svg" alt="Coding Conf" width="209" height="30">
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="login.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-main">
+    
+    <section class="ticket-banner-section container" aria-labelledby="confirmation-heading">
+      <h1 id="confirmation-heading" class="page-title confirmation-title">
+        Congrats, <span id="banner-name" class="text-gradient">Attendee</span>! Your ticket is ready.
+      </h1>
+
+      <p class="confirmation-subtext">
+        We've emailed your ticket to <span id="banner-email" class="accent-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0c797f697e4c6863616d6562226f6361">[email&#160;protected]</a></span> and will send updates in the run up to the event.
+      </p>
+    </section>
+
+    
+    <section class="ticket-display-section container" aria-label="Digital conference ticket">
+      <div class="glass-ticket-shell">
+        <article class="ticket-badge" aria-label="Coding Conf attendee pass">
+          
+          <div class="ticket-main">
+            <div class="ticket-brand">
+              <img
+                src="assets/images/logo-mark.svg"
+                alt="Coding Conf logo icon"
+                class="ticket-brand-icon"
+                width="40"
+                height="40"
+              >
+              <div class="ticket-brand-text">
+                <h2 class="ticket-brand-title">Coding Conf</h2>
+                <p class="ticket-meta">
+                  <time datetime="2026-10-26" id="ticket-date">Oct 26, 2026</time> / <span id="ticket-location">Papine, Kgn</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="ticket-holder">
+              <img
+                id="ticket-avatar"
+                src="assets/images/logo-mark.svg"
+                alt="Attendee profile picture"
+                class="ticket-avatar-img"
+                width="74"
+                height="74"
+              >
+              <div class="ticket-holder-details">
+                <p id="ticket-holder-name" class="ticket-holder-name">Attendee Name</p>
+                <a
+                  id="ticket-github-link"
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="ticket-github"
+                  aria-label="View attendee GitHub profile"
+                >
+                  <img src="assets/images/icon-github.svg" alt="" width="20" height="20">
+                  <span id="ticket-github-handle">@username</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="ticket-stub">
+            <span id="ticket-serial" class="ticket-serial-code" aria-label="Ticket serial number">#01609</span>
+          </div>
+        </article>
+
+        
+        <div class="ticket-toolbar">
+          <button type="button" id="print-ticket-btn" class="btn-primary">Print / Save Ticket</button>
+          <button type="button" id="reset-ticket-btn" class="btn-link">Register Another Attendee</button>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo-mark.svg" alt="Coding Conf mark" width="28" height="28">
+        <span><strong>Coding Conf 2026</strong> &bull; October 26, 2026 &bull; Papine, Kgn</span>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#schedule">Schedule</a></li>
+        <li><a href="login.html">Register</a></li>
+      </ul>
+
+     
+    </div>
+  </footer>
+<script src="ticket.js"></script>
+  
+</body>
+</html>
